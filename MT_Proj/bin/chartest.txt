@@ -1,0 +1,2 @@
+this is simple byte stream write and read example
+hii
