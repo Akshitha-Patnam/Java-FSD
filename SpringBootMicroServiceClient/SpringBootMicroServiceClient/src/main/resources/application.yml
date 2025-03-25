@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SpringBootMicroServiceClient
+
+#DICOVERY SERVER ACCESS 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+server:
+  port: 7799
