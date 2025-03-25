@@ -20,7 +20,7 @@ import com.test.Entity.Book;
 import com.test.Service.Book_service;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="http://localhost:4200/")
 @RequestMapping(value="/api")
 
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+		<bean id = "adr1" class="com.test.Address" scope="singleton">
+			<property name="state" value="AP"></property>
+			<property name="cnty" value="India"></property>
+			<property name="pin" value="123123"></property>
+			
+		</bean>
+		
+		<bean id = "adr2" class="com.test.Address">
+			<constructor-arg name = "state" value="KA"></constructor-arg>
+			<constructor-arg name = "cnty" value="India"></constructor-arg>
+			<constructor-arg name="pin" value="123123"></constructor-arg>
+		</bean>
+		
+		<bean id = "emp" class="com.test.Employee">
+			<property name="id" value="101"></property>
+			<property name="name" value="Rohit"></property>
+			<property name="cmp" value="ICC"></property>
+			<property name="city" value="Mumbai"></property>
+		    <property name = "aobj" ref="adr1"></property>
+		</bean>
+		
+		<bean id = "emp1" class="com.test.Employee">
+			<constructor-arg name="id" value="201"></constructor-arg>
+			<constructor-arg name = "name" value="Rahul"></constructor-arg>
+			<constructor-arg name = "cmp" value="BCCI"></constructor-arg>
+			<constructor-arg name = "city" value=""></constructor-arg>
+			<constructor-arg name = "aobj" ref="adr2"></constructor-arg>
+		</bean>
+
+</beans>
+
+
+
+
+
+
+
+
