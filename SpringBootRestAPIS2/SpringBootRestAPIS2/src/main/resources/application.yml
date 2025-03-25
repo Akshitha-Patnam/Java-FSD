@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SpringBootRestAPIS2
+server:
+  port: 4321
